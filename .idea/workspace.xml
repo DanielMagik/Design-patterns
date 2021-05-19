@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac8de89f-9676-434d-be7c-74c0319a3b5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creational/singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creational/singleton/EnumSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,15 +79,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,7 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1621250601186</updated>
       <workItem from="1621250602757" duration="984000" />
-      <workItem from="1621354918516" duration="4111000" />
+      <workItem from="1621354918516" duration="4406000" />
+      <workItem from="1621440524857" duration="3278000" />
     </task>
     <servers />
   </component>
@@ -123,23 +123,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1636" height="369" key="GridCell.Tab.0.bottom" timestamp="1621359033551">
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1621443847934">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="369" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1621359033551" />
-    <state width="1636" height="369" key="GridCell.Tab.0.center" timestamp="1621359033551">
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1621443847934" />
+    <state x="397" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1621443257514">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="369" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1621359033551" />
-    <state width="1636" height="369" key="GridCell.Tab.0.left" timestamp="1621359033551">
+    <state x="397" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1621443257514" />
+    <state width="1636" height="369" key="GridCell.Tab.0.bottom" timestamp="1621444358814">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="369" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1621359033551" />
-    <state width="1636" height="369" key="GridCell.Tab.0.right" timestamp="1621359033551">
+    <state width="1636" height="369" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1621444358814" />
+    <state width="1636" height="369" key="GridCell.Tab.0.center" timestamp="1621444358814">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="369" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1621359033551" />
+    <state width="1636" height="369" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1621444358814" />
+    <state width="1636" height="369" key="GridCell.Tab.0.left" timestamp="1621444358814">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1636" height="369" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1621444358814" />
+    <state width="1636" height="369" key="GridCell.Tab.0.right" timestamp="1621444358814">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1636" height="369" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1621444358814" />
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2" timestamp="1621359257661">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1621359257661" />
   </component>
 </project>

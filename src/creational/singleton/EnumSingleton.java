@@ -2,12 +2,12 @@ package creational.singleton;
 
 import java.util.*;
 
-public enum Singleton
+public enum EnumSingleton
 {
     INSTANCE;
     private List<String> list;
 
-    Singleton()
+    EnumSingleton()
     {
         list = Collections.synchronizedList(new ArrayList<>());
     }
@@ -21,7 +21,7 @@ public enum Singleton
     {
         list.remove(index);
     }
-
+    
     public List<String> getList()
     {
         return list;
