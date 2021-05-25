@@ -1,5 +1,11 @@
 package main;
 
+import creational.builder.Director;
+import creational.builder.builders.Builder;
+import creational.builder.builders.DetachedHouseBuilder;
+import creational.builder.builders.VillaBuilder;
+import creational.builder.houses.DetachedHouse;
+import creational.builder.houses.Villa;
 import creational.singleton.NoEnumSingleton;
 import creational.singleton.EnumSingleton;
 
@@ -8,7 +14,7 @@ public class Main
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.runNoEnumSingleton();
+        main.runBuilder();
 
     }
     private void runEnumSingleton()
@@ -58,5 +64,18 @@ public class Main
         NoEnumSingleton singleton2 = NoEnumSingleton.getInstance();
         System.out.println(singleton2.getName());
         System.out.println(singleton==singleton1 && singleton1==singleton2 && singleton==singleton2);
+    }
+    private void runBuilder()
+    {
+        Director director = new Director();
+        DetachedHouseBuilder builder = new DetachedHouseBuilder();
+        director.buildDetachedHouse(builder);
+        //DetachedHouse detachedHouse = builder.getResult();
+
+        VillaBuilder villaBuilder = new VillaBuilder();
+        director.buildVilla(villaBuilder);
+        Villa villa = villaBuilder.getResult();
+        villa.printInfo();
+
     }
 }
