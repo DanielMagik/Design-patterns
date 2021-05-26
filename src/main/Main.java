@@ -1,5 +1,8 @@
 package main;
 
+import creational.abstract_factory.Meal;
+import creational.abstract_factory.factories.BeerFactory;
+import creational.abstract_factory.factories.MealFactory;
 import creational.builder.Director;
 import creational.builder.builders.DetachedHouseBuilder;
 import creational.builder.builders.VillaBuilder;
@@ -17,7 +20,7 @@ public class Main
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.runPrototype();
+        main.runAbstractFactory();
 
     }
     private void runEnumSingleton()
@@ -129,6 +132,14 @@ public class Main
                     System.out.println("Rectangle 1 equals rectangle 2.");
             }
         }
+    }
+    private void runAbstractFactory()
+    {
+        MealFactory mealFactory = new BeerFactory();
+        Meal meal = new Meal(mealFactory,6);
+        meal.consume();
+        System.out.println("\n");
+        meal.consume();
     }
 
 

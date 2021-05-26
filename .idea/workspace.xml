@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac8de89f-9676-434d-be7c-74c0319a3b5c" name="Default Changelist" comment="Add builder">
+    <list default="true" id="ac8de89f-9676-434d-be7c-74c0319a3b5c" name="Default Changelist" comment="Add prototype">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
@@ -31,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,6 +79,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -99,7 +110,7 @@
       <workItem from="1621534534482" duration="6101000" />
       <workItem from="1621682228259" duration="2307000" />
       <workItem from="1621933741312" duration="5081000" />
-      <workItem from="1622024959795" duration="595000" />
+      <workItem from="1622024959795" duration="3273000" />
     </task>
     <task id="LOCAL-00001" summary="Add no enum singleton">
       <created>1621445516974</created>
@@ -115,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621935338425</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add prototype">
+      <created>1622026232292</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622026232292</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,13 +154,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add no enum singleton" />
     <MESSAGE value="Add builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add builder" />
+    <MESSAGE value="Add prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add prototype" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1621937396013">
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1622028624284">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1621937396013" />
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1622028624284" />
     <state x="623" y="395" width="433" height="227" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1621936804036">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -171,9 +190,9 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="818" height="369" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1621944539624" />
-    <state x="432" y="234" key="Vcs.Push.Dialog.v2" timestamp="1621935347666">
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2" timestamp="1622026237905">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="234" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1621935347666" />
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1622026237905" />
   </component>
 </project>
