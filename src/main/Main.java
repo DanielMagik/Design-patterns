@@ -7,6 +7,9 @@ import creational.builder.Director;
 import creational.builder.builders.DetachedHouseBuilder;
 import creational.builder.builders.VillaBuilder;
 import creational.builder.houses.Villa;
+import creational.factory_method.logistic.Logistics;
+import creational.factory_method.logistic.ShipsLogistics;
+import creational.factory_method.logistic.TrucksLogistics;
 import creational.prototype.Circle;
 import creational.prototype.Rectangle;
 import creational.prototype.Shape;
@@ -20,7 +23,7 @@ public class Main
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.runAbstractFactory();
+        main.runFactoryMethod();
 
     }
     private void runEnumSingleton()
@@ -141,6 +144,12 @@ public class Main
         System.out.println("\n");
         meal.consume();
     }
-
+    private void runFactoryMethod()
+    {
+        Logistics logistics = new TrucksLogistics();
+        logistics.perform();
+        logistics = new ShipsLogistics();
+        logistics.perform();
+    }
 
 }
