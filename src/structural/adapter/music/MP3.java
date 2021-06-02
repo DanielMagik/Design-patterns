@@ -6,7 +6,7 @@ public class MP3
 {
     private String name;
     private String author;
-    private List<Byte> sounds;
+    private final List<Byte> sounds;
 
     public MP3()
     {

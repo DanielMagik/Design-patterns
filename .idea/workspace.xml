@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac8de89f-9676-434d-be7c-74c0319a3b5c" name="Default Changelist" comment="Add prototype">
+    <list default="true" id="ac8de89f-9676-434d-be7c-74c0319a3b5c" name="Default Changelist" comment="Add adapter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structural/adapter/adapter/MP4Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/adapter/MP4Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structural/adapter/music/MP3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/music/MP3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structural/adapter/music/MP4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/music/MP4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structural/adapter/players/MP3Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/players/MP3Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
+        <option value="package-info" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -113,7 +118,9 @@
       <workItem from="1622024959795" duration="3988000" />
       <workItem from="1622217804477" duration="3880000" />
       <workItem from="1622286292112" duration="1000000" />
-      <workItem from="1622546090651" duration="2947000" />
+      <workItem from="1622546090651" duration="3891000" />
+      <workItem from="1622566899526" duration="2695000" />
+      <workItem from="1622652921567" duration="9004000" />
     </task>
     <task id="LOCAL-00001" summary="Add no enum singleton">
       <created>1621445516974</created>
@@ -136,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622026232292</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add adapter">
+      <created>1622550883771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622550883772</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,13 +172,14 @@
     <MESSAGE value="Add no enum singleton" />
     <MESSAGE value="Add builder" />
     <MESSAGE value="Add prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add prototype" />
+    <MESSAGE value="Add adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add adapter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1622549666511">
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1622661241348">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1622549666511" />
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1622661241348" />
     <state x="623" y="395" width="433" height="227" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1621936804036">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -177,41 +192,41 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="248" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1621448162972" />
-    <state width="818" height="265" key="GridCell.Tab.0.bottom" timestamp="1622550430013">
+    <state width="1636" height="265" key="GridCell.Tab.0.bottom" timestamp="1622662683950">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622550430013" />
-    <state width="818" height="265" key="GridCell.Tab.0.center" timestamp="1622550430013">
+    <state width="1636" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683950" />
+    <state width="1636" height="265" key="GridCell.Tab.0.center" timestamp="1622662683949">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="265" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622550430013" />
-    <state width="818" height="265" key="GridCell.Tab.0.left" timestamp="1622550430013">
+    <state width="1636" height="265" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683949" />
+    <state width="1636" height="265" key="GridCell.Tab.0.left" timestamp="1622662683949">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="265" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622550430013" />
-    <state width="818" height="265" key="GridCell.Tab.0.right" timestamp="1622550430013">
+    <state width="1636" height="265" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683949" />
+    <state width="1636" height="265" key="GridCell.Tab.0.right" timestamp="1622662683950">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="265" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622550430013" />
-    <state width="818" height="328" key="GridCell.Tab.1.bottom" timestamp="1622550132857">
+    <state width="1636" height="265" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683950" />
+    <state width="818" height="328" key="GridCell.Tab.1.bottom" timestamp="1622551612268">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622550132857" />
-    <state width="818" height="328" key="GridCell.Tab.1.center" timestamp="1622550132857">
+    <state width="818" height="328" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
+    <state width="818" height="328" key="GridCell.Tab.1.center" timestamp="1622551612268">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622550132857" />
-    <state width="818" height="328" key="GridCell.Tab.1.left" timestamp="1622550132857">
+    <state width="818" height="328" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
+    <state width="818" height="328" key="GridCell.Tab.1.left" timestamp="1622551612268">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622550132857" />
-    <state width="818" height="328" key="GridCell.Tab.1.right" timestamp="1622550132857">
+    <state width="818" height="328" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
+    <state width="818" height="328" key="GridCell.Tab.1.right" timestamp="1622551612268">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622550132857" />
-    <state x="432" y="234" key="Vcs.Push.Dialog.v2" timestamp="1622222933089">
+    <state width="818" height="328" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2" timestamp="1622550886579">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="234" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1622222933089" />
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1622550886579" />
   </component>
 </project>

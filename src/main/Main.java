@@ -20,6 +20,10 @@ import structural.adapter.music.MP4;
 import structural.adapter.music.MediaType;
 import structural.adapter.adapter.MP4Adapter;
 import structural.adapter.players.MP3Player;
+import structural.bridge.humans.Athlete;
+import structural.bridge.workouts.Gym;
+import structural.bridge.workouts.StreetWorkout;
+import structural.bridge.workouts.Workout;
 
 import java.util.*;
 
@@ -28,7 +32,7 @@ public class Main
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.runAdapter();
+        main.runBridge();
 
     }
     private void runEnumSingleton()
@@ -161,13 +165,41 @@ public class Main
         MP3 song1 = new MP3();
         List<Byte> song2Bytes = Arrays.asList((byte) 1,(byte)15,(byte)100, (byte)32);
         MP3 song2 = new MP3("Pink wine","Feduk",song2Bytes);
+
         MP3Player mp3Player = new MP3Player("Sony");
         mp3Player.play(song1);
         mp3Player.play(song2);
-        List<Integer> mp4Bytes = Arrays.asList(1,12,50,100,10,16,55,40);
+
+        List<Integer> mp4Bytes = Arrays.asList(1,12,50,100,200,555,1026,1402);
         MP4 MP4Song = new MP4("Gazirovka","Black",mp4Bytes, MediaType.AUDIO);
+
         MP4Adapter mp4Adapter = new MP4Adapter(MP4Song);
         mp3Player.play(mp4Adapter);
+    }
+    private void runBridge()
+    {
+        Workout gym = new Gym(20,20,50);
+        Workout streetWorkout = new StreetWorkout(true, 0, 0);
+        Athlete gymAthlete = new Athlete(gym);
+        Athlete streetWorkouter = new Athlete(streetWorkout);
+
+        for(int i = 0; i < 10000; i++)
+        {
+            gymAthlete.doPushWorkout();
+            gymAthlete.doPullWorkout();
+            gymAthlete.doLegsWorkout();
+        }
+        gymAthlete.doLegsWorkout();
+        gymAthlete.getWorkoutStatus();
+
+        for(int i = 0; i < 1000; i++)
+        {
+            streetWorkouter.doPullWorkout();
+            streetWorkouter.doPushWorkout();
+        }
+        streetWorkouter.getWorkoutStatus();
+
+
     }
 
 }

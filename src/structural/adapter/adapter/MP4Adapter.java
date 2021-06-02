@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MP4Adapter extends MP3
 {
-    private MP4 mp4;
+    private final MP4 mp4;
 
     public MP4Adapter(MP4 mp4)
     {
@@ -20,7 +20,7 @@ public class MP4Adapter extends MP3
     @Override
     public String getName()
     {
-        return mp4.getName() +".mp4";
+        return mp4.getName() + ".mp4";
     }
 
     @Override
@@ -32,17 +32,17 @@ public class MP4Adapter extends MP3
     @Override
     public List<Byte> getSounds()
     {
-        if(mp4.getMediaType() != MediaType.AUDIO)
-        {
+        if (mp4.getMediaType() != MediaType.AUDIO)
             return new ArrayList<>();
-        }
+
         List<Byte> list = new ArrayList<>();
-        Byte actual;
-        for(Integer i : mp4.getSounds())
+
+        for (Integer i : mp4.getSounds())
         {
-            Byte b = Integer.valueOf(i%255).byteValue();
+            Byte b = Integer.valueOf(i % 128).byteValue();
             list.add(b);
         }
         return list;
     }
+
 }
