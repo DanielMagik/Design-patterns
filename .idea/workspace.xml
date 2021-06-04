@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac8de89f-9676-434d-be7c-74c0319a3b5c" name="Default Changelist" comment="Add adapter">
+    <list default="true" id="ac8de89f-9676-434d-be7c-74c0319a3b5c" name="Default Changelist" comment="Add bridge">
+      <change afterPath="$PROJECT_DIR$/src/structural/object_tree/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/structural/object_tree/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/structural/object_tree/District.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structural/adapter/adapter/MP4Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/adapter/MP4Adapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structural/adapter/music/MP3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/music/MP3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structural/adapter/music/MP4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/music/MP4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structural/adapter/players/MP3Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/adapter/players/MP3Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structural/bridge/humans/Strongman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structural/bridge/humans/Strongman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -84,17 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -120,7 +109,10 @@
       <workItem from="1622286292112" duration="1000000" />
       <workItem from="1622546090651" duration="3891000" />
       <workItem from="1622566899526" duration="2695000" />
-      <workItem from="1622652921567" duration="9004000" />
+      <workItem from="1622652921567" duration="9259000" />
+      <workItem from="1622716449066" duration="2652000" />
+      <workItem from="1622796021718" duration="3065000" />
+      <workItem from="1622809243166" duration="3182000" />
     </task>
     <task id="LOCAL-00001" summary="Add no enum singleton">
       <created>1621445516974</created>
@@ -150,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622550883772</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add bridge">
+      <created>1622662929083</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622662929083</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,13 +172,14 @@
     <MESSAGE value="Add builder" />
     <MESSAGE value="Add prototype" />
     <MESSAGE value="Add adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add adapter" />
+    <MESSAGE value="Add bridge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bridge" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1622661241348">
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1622798609733">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1622661241348" />
+    <state x="645" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1622798609733" />
     <state x="623" y="395" width="433" height="227" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1621936804036">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -192,41 +192,41 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="248" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1621448162972" />
-    <state width="1636" height="265" key="GridCell.Tab.0.bottom" timestamp="1622662683950">
+    <state width="1636" height="265" key="GridCell.Tab.0.bottom" timestamp="1622812414349">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683950" />
-    <state width="1636" height="265" key="GridCell.Tab.0.center" timestamp="1622662683949">
+    <state width="1636" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622812414349" />
+    <state width="1636" height="265" key="GridCell.Tab.0.center" timestamp="1622812414348">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="265" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683949" />
-    <state width="1636" height="265" key="GridCell.Tab.0.left" timestamp="1622662683949">
+    <state width="1636" height="265" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622812414348" />
+    <state width="1636" height="265" key="GridCell.Tab.0.left" timestamp="1622812414348">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="265" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683949" />
-    <state width="1636" height="265" key="GridCell.Tab.0.right" timestamp="1622662683950">
+    <state width="1636" height="265" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622812414348" />
+    <state width="1636" height="265" key="GridCell.Tab.0.right" timestamp="1622812414348">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1636" height="265" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622662683950" />
-    <state width="818" height="328" key="GridCell.Tab.1.bottom" timestamp="1622551612268">
+    <state width="1636" height="265" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622812414348" />
+    <state width="1636" height="328" key="GridCell.Tab.1.bottom" timestamp="1622662980906">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
-    <state width="818" height="328" key="GridCell.Tab.1.center" timestamp="1622551612268">
+    <state width="1636" height="328" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1622662980906" />
+    <state width="1636" height="328" key="GridCell.Tab.1.center" timestamp="1622662980905">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
-    <state width="818" height="328" key="GridCell.Tab.1.left" timestamp="1622551612268">
+    <state width="1636" height="328" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1622662980905" />
+    <state width="1636" height="328" key="GridCell.Tab.1.left" timestamp="1622662980905">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
-    <state width="818" height="328" key="GridCell.Tab.1.right" timestamp="1622551612268">
+    <state width="1636" height="328" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1622662980905" />
+    <state width="1636" height="328" key="GridCell.Tab.1.right" timestamp="1622662980905">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="818" height="328" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622551612268" />
-    <state x="432" y="234" key="Vcs.Push.Dialog.v2" timestamp="1622550886579">
+    <state width="1636" height="328" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1622662980905" />
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2" timestamp="1622662932218">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="234" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1622550886579" />
+    <state x="432" y="234" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1622662932218" />
   </component>
 </project>

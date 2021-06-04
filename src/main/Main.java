@@ -21,9 +21,12 @@ import structural.adapter.music.MediaType;
 import structural.adapter.adapter.MP4Adapter;
 import structural.adapter.players.MP3Player;
 import structural.bridge.humans.Athlete;
+import structural.bridge.humans.Strongman;
 import structural.bridge.workouts.Gym;
 import structural.bridge.workouts.StreetWorkout;
 import structural.bridge.workouts.Workout;
+import structural.object_tree.Building;
+import structural.object_tree.District;
 
 import java.util.*;
 
@@ -32,7 +35,7 @@ public class Main
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.runBridge();
+        main.runComponent();
 
     }
     private void runEnumSingleton()
@@ -182,8 +185,10 @@ public class Main
         Workout streetWorkout = new StreetWorkout(true, 0, 0);
         Athlete gymAthlete = new Athlete(gym);
         Athlete streetWorkouter = new Athlete(streetWorkout);
+        Workout strongmanGym = new Gym(0,0,0);
+        Strongman strongman = new Strongman(strongmanGym);
 
-        for(int i = 0; i < 10000; i++)
+        for(int i = 0; i < 50; i++)
         {
             gymAthlete.doPushWorkout();
             gymAthlete.doPullWorkout();
@@ -192,12 +197,43 @@ public class Main
         gymAthlete.doLegsWorkout();
         gymAthlete.getWorkoutStatus();
 
-        for(int i = 0; i < 1000; i++)
+
+        for(int i = 0; i < 30; i++)
         {
             streetWorkouter.doPullWorkout();
             streetWorkouter.doPushWorkout();
         }
+
         streetWorkouter.getWorkoutStatus();
+        for(int i = 0; i < 5; i++)
+            strongman.injectTestosterone();
+        strongman.getWorkoutStatus();
+
+
+
+    }
+    private void runComponent()
+    {
+        Building building1 = new Building("Adam's house","Andrea's street 12C");
+        Building building2 = new Building("Eva's house","Andrea's street 12D");
+        District district1 = new District("John's Camp",Arrays.asList(building1,building2));
+        Building building3 = new Building("Cindy's house", "Linkoln street 124");
+        District district2 = new District("New Island", Arrays.asList(building3));
+        Building building4 = new Building("Olivia's house","King's street 10");
+        District smallCity = new District("Small city", Arrays.asList(district1,district2,building4));
+
+        Building b1 = new Building("Andy's house","Arnold's street 1001");
+        Building b2 = new Building("Mackenzie's house","Arnold's street 1002");
+        Building b3 = new Building("Derek's house","Arnold's street 1003");
+        Building b4 = new Building("Beth's house","Sylwester's street 1");
+        District district3 = new District("Long Island",Arrays.asList(b1,b2,b3,b4));
+        Building b5 = new Building("Tony's house", "Widow street 93A");
+        Building b6 = new Building("Peter's house", "Widow street 93B");
+        District district4 = new District("Black Widow District",Arrays.asList(b5,b6,district3));
+        Building building5 = new Building("Mayor's Residence","Main street 1");
+        District city = new District("Big City",Arrays.asList(smallCity,district4,building5));
+        city.printStatus(0);
+
 
 
     }

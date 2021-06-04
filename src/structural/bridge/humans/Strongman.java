@@ -9,7 +9,7 @@ public class Strongman extends Athlete
         super(workout);
     }
 
-    void GetSuperPower()
+    public void injectTestosterone()
     {
         this.workout.setPushPoints(workout.getPushPoints() + 20);
         this.workout.setPullPoints(workout.getPullPoints() + 20);
