@@ -25,6 +25,11 @@ import structural.bridge.humans.Strongman;
 import structural.bridge.workouts.Gym;
 import structural.bridge.workouts.StreetWorkout;
 import structural.bridge.workouts.Workout;
+import structural.decorator.decorators.EmailDecorator;
+import structural.decorator.decorators.SlackDecorator;
+import structural.decorator.senders.NotificationSender;
+import structural.decorator.decorators.FacebookDecorator;
+import structural.decorator.decorators.SMSDecorator;
 import structural.object_tree.Building;
 import structural.object_tree.District;
 
@@ -35,7 +40,7 @@ public class Main
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.runComponent();
+        main.runDecorator();
 
     }
     private void runEnumSingleton()
@@ -235,6 +240,20 @@ public class Main
         city.printStatus(0);
 
 
+
+    }
+    private void runDecorator()
+    {
+        SMSDecorator decorator = new SMSDecorator(
+                new SlackDecorator(
+                        new FacebookDecorator(
+                                new EmailDecorator(
+                                        new NotificationSender("This is Sparta!")
+                                )
+                        )
+                )
+        );
+        decorator.sendNotification();
 
     }
 
