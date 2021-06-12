@@ -30,6 +30,7 @@ import structural.decorator.decorators.SlackDecorator;
 import structural.decorator.senders.NotificationSender;
 import structural.decorator.decorators.FacebookDecorator;
 import structural.decorator.decorators.SMSDecorator;
+import structural.facade.facade.MusicConversionFacade;
 import structural.object_tree.Building;
 import structural.object_tree.District;
 
@@ -40,7 +41,7 @@ public class Main
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.runDecorator();
+        main.runFacade();
 
     }
     private void runEnumSingleton()
@@ -256,5 +257,11 @@ public class Main
         decorator.sendNotification();
 
     }
+    private void runFacade()
+    {
+        MusicConversionFacade converter = new MusicConversionFacade();
+        converter.convertMusic("Candy shop.mp4","mp3");
+    }
+
 
 }
